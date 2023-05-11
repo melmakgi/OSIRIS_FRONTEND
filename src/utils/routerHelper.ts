@@ -64,7 +64,7 @@ export const generateRoutesFn1 = (
       ) as string
     }
 
-    // Разработчик может расширяться в соответствии с реальной ситуацией
+    // Можно расширяться в соответствии с реальной ситуацией
     for (const item of keys) {
       // Совпадение по пути
       if (isUrl(item) && (onlyOneChild === item || route.path === item)) {

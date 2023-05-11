@@ -88,8 +88,7 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
             }
         ]
     },
-    /* Демонтаж */
-    {
+    {   /* Демонтаж */
         path: '/dismantling',
         component: Layout,
         redirect: '/dismantling/production',
@@ -100,18 +99,58 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
             alwaysShow: true
         },
         children: [
-            /* Выработка */
-            {
+            {   /* Выработка */
                 path: 'production',
-                component: () => import('@/views/Dismantling/Production.vue'),
+                component: () => import('@/views/Dismantling/Production/Production.vue'),
                 name: 'Production',
                 meta: {
                     title: t('router.production'),
                     icon: 'svg-icon:car-crane'
                 }
             },
-            /* Вывоз */
-            {
+            {   /* Добавление записи */
+                path: 'production-add',
+                component: () => import('@/views/Dismantling/Production/ProductionAdd.vue'),
+                name: 'ProductionAdd',
+                meta: {
+                    title: t('router.productionAdd'),
+                    icon: 'svg-icon:note-add-outline',
+                    noTagsView: true,
+                    noCache: true,
+                    hidden: true,
+                    canTo: true,
+                    activeMenu: 'production'
+                }
+            },
+            {   /* Редактирование записи */
+                path: 'production-edit',
+                component: () => import('@/views/Dismantling/Production/ProductionEdit.vue'),
+                name: 'ProductionEdit',
+                meta: {
+                    title: t('router.productionEdit'),
+                    icon: 'svg-icon:document-add-broken',
+                    noTagsView: true,
+                    noCache: true,
+                    hidden: true,
+                    canTo: true,
+                    activeMenu: 'production'
+                }
+            },
+            {   /* Подробная информация о записи */
+                path: 'production-detail',
+                component: () => import('@/views/Dismantling/Production/ProductionDetail.vue'),
+                name: 'ProductionDetail',
+                meta: {
+                    title: t('router.productionDetail'),
+                    icon: 'svg-icon:detail',
+                    noTagsView: true,
+                    noCache: true,
+                    hidden: true,
+                    canTo: true,
+                    activeMenu: 'production'
+                }
+            },
+            {   /* Вывоз */
                 path: 'export',
                 component: () => import('@/views/Dismantling/Export.vue'),
                 name: 'Export',
@@ -120,8 +159,7 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
                     icon: 'svg-icon:lorry-fast'
                 }
             },
-            /* Остатки */
-            {
+            {   /* Остатки */
                 path: 'remains',
                 component: () => import('@/views/Dismantling/Remains.vue'),
                 name: 'RemainsDismantling',
@@ -132,8 +170,7 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
             }
         ]
     },
-    /* Склад */
-    {
+    {   /* Склад */
         path: '/warehouse',
         component: Layout,
         redirect: '/warehouse/warehouses',
@@ -144,8 +181,7 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
             alwaysShow: true
         },
         children: [
-            /* Поступление */
-            {
+            {   /* Поступление */
                 path: 'incoming',
                 component: () => import('@/views/Warehouse/Incoming.vue'),
                 name: 'Incoming',
@@ -154,8 +190,7 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
                     icon: 'svg-icon:pipeline-add-20-regular'
                 }
             },
-            /* Отгрузки */
-            {
+            {   /* Отгрузки */
                 path: 'shipments',
                 component: () => import('@/views/Warehouse/Shipments.vue'),
                 name: 'Shipments',
@@ -164,8 +199,7 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
                     icon: 'svg-icon:lorry-delivery'
                 }
             },
-            /* Остатки */
-            {
+            {   /* Остатки */
                 path: 'remains',
                 component: () => import('@/views/Warehouse/Remains.vue'),
                 name: 'RemainsWarehouse',
@@ -174,8 +208,7 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
                     icon: 'svg-icon:abacus'
                 }
             },
-            /* Обработка */
-            {
+            {   /* Обработка */
                 path: 'processing',
                 component: () => import('@/views/Warehouse/Processing.vue'),
                 name: 'Processing',
@@ -186,8 +219,7 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
             }
         ]
     },
-    /* Продажи */
-    {
+    {   /* Продажи */
         path: '/',
         component: Layout,
         name: 'Sales',
@@ -204,8 +236,7 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
             }
         ]
     },
-    /* Справочники */
-    {
+    {   /* Справочники */
         path: '/',
         component: Layout,
         name: 'References',

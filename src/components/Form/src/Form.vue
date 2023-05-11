@@ -147,7 +147,7 @@ export default defineComponent({
       return content
     }
 
-    // Оказывать или не оказывать el-col
+    // Показывать или не показывать el-col
     const renderFormItemWrap = () => {
       // hiddenАтрибут указывает на скрытый, не отображаемый вид
       const { schema = [], isCol } = unref(getProps)
@@ -241,7 +241,7 @@ export default defineComponent({
       )
     }
 
-    // 渲染options
+    // Рендеринг options
     const renderOptions = (item: FormSchema) => {
       switch (item.component) {
         case 'Select':

@@ -17,6 +17,10 @@ import {Search} from '@/components/Search'
 import {Table} from '@/components/Table'
 import {useIcon} from "@/hooks/web/useIcon";
 
+defineOptions({
+  name: 'Production'
+})
+
 const {t} = useI18n()
 
 const appStore = useAppStore();
@@ -49,7 +53,6 @@ const selectDeposit = reactive<FormSchema[]>([
   },
 ])
 
-/**/
 const {register, tableObject, methods} = useTable<TableData>({
   getListApi: getTableListApi,
   delListApi: delTableListApi,
@@ -117,7 +120,7 @@ const crudSchemas = reactive<CrudSchema[]>([
 const {allSchemas} = useCrudSchemas(crudSchemas)
 
 const AddAction = () => {
-  push('/example/example-add')
+  push('/dismantling/production-add')
 }
 
 const delLoading = ref(false)
@@ -136,7 +139,7 @@ const delData = async (row: TableData | null, multiple: boolean) => {
 }
 
 const action = (row: TableData, type: string) => {
-  push(`/example/example-${type}?id=${row.id}`)
+  push(`/dismantling/production-${type}?id=${row.id}`)
 }
 
 const edit = useIcon({ icon: 'svg-icon:edit-square-outline' });

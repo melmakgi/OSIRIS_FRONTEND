@@ -152,7 +152,7 @@ watch(
     </div>
 
     <div class="flex justify-between items-center">
-      <span class="text-14px">{{ t('setting.screenfullIcon') }}</span>
+      <span class="text-14px">{{ t('setting.screenFullIcon') }}</span>
       <ElSwitch v-model="screenfull" @change="screenfullChange" />
     </div>
 

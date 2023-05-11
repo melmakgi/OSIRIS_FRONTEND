@@ -5,16 +5,17 @@
 Osiris (Осирис) - бог возрождения в древнеегипетской мифологии.
 Система учета перемещения и продажи труб.
 Система состоит из подсистем:
+
 1. Демонтаж труб:
     - вырабтка;
     - вывоз труб на склады;
     - цчет остатков;
 2. Склады:
-   - учет поступлений на склад;
-   - наличия труб на складах;
-   - отгрузки контрагенам;
-   - остатки на складах;
-   - обработка;
+    - учет поступлений на склад;
+    - наличия труб на складах;
+    - отгрузки контрагенам;
+    - остатки на складах;
+    - обработка;
 3. Продажа труб.
 
 ## Особенности
@@ -30,7 +31,7 @@ Osiris (Осирис) - бог возрождения в древнеегипе�
 account: **admin/admin test/test**
 
 - `admin` учетная запись используется для имитации разрешения сервера на управление и отображения всего, что возвращает
-сервер
+  сервер
 - `test` учетная запись используется для имитации полномочий внешнего управления.
 
 ## Документация
@@ -79,11 +80,16 @@ npm run build:pro
 
 Поддержка современных браузеров, кроме IE
 
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>
-IE | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>
-Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>
-Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>
-Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png" alt=" Edge" width="24px" height="24px" />]
+(http://godban.github.io/browsers-support-badges/)</br>
+IE | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />]
+(http://godban.github.io/browsers-support-badges/)</br>
+Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />]
+(http://godban.github.io/browsers-support-badges/)</br>
+Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />]
+(http://godban.github.io/browsers-support-badges/)</br>
+Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />]
+(http://godban.github.io/browsers-support-badges/)</br>
 Safari |
 | :-: | :-: | :-: | :-: | :-: |
 | not support | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
